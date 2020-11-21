@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body id="body">
+    <section id="sect"> 
+        <h1 id="h1h">Sign up:</h1><br>
+        <form action="">
+        <label for="email">Email Address</label>
+        <input type="text" placeholder="Type here...">
+        <label for="password">Password</label><br>
+        <input type="password" id="myInput" placeholder="Type here...">
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Type here...">
+        
+    </form>
+    <input type="submit" id="submit" onclick="on()">
+</section>
+<section id="secti">
+    <form action="">
+<label for="">What is 43 multiplied by 52?</label>
+<br><input type="number" id="input" placeholder="Type here...">
+</form>
+<input type="submit" id="sub" onclick="sub()">
+</section>
+
+
+<section id="sectio">
+    <form id="form" action="">
+<label id="label" for="">What is 34 multiplied by 42?</label>
+<br><input type="number" id="input1" placeholder="Type here...">
+</form>
+<input type="submit" id="subm" onclick="subm()">
+</section>
+    <H1 id="h1">Thank you <span id="span">________</span> for signing up to our website
+    </H1>
+    <h1 id="h2">More updates will be given soon as we progress</h1>
+
+   <h1 id="h3"> P.S. (Spoiler Alert) Fun games are on their way!!:)</h1>
+
+
+
+    
+<script>
+var div=document.getElementById("div");
+    var name=document.getElementById("name");
+
+signUp.onclick=()=>{
+    location.href="./signup.html";
+}
+
+
+function on(){
+    document.getElementById("sect").style.display="none";
+    document.getElementById("secti").style.display="inherit";
+    document.body.style.background="linear-gradient(skyblue,blue)";
+}
+
+
+
+function sub(){
+    if(input.value==2236){
+        document.getElementById("secti").style.display="none";
+        document.getElementById("sectio").style.display="inherit";
+        document.body.style.background="linear-gradient(orange,orangered)";
+
+
+    } else{
+        location.href="./oops.html";
+    }
+}
+
+function subm(){
+    if(input1.value==1428){
+        document.body.style.background="linear-gradient(seashell,wheat)";
+        document.getElementById("sectio").style.display="none";
+        document.getElementById("h1").style.display="inherit";
+        document.getElementById("h1").style.fontSize="50px";
+        document.getElementById("h1").style.margin="70px";
+        document.getElementById("h2").style.display="inherit";
+        document.getElementById("h2").style.fontSize="50px";
+        document.getElementById("h2").style.margin="70px";
+        document.getElementById("h3").style.display="inherit";
+        document.getElementById("h3").style.fontSize="50px";
+        document.getElementById("h1").style.margin="70px";
+        document.getElementById("span").innerHTML=document.getElementById("name").value;
+    }
+    else{
+        location.href="./oops.html";
+    }
+}
+</script>
+</body>
+</html>
